@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChordGenarator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row text-box">
+            <h1 class="header-text">Scale And Chords Genarator</h1>
+        </div>
+       <div class="form-box">
+        <form action="./chordGen.py" method="POST" >
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Key</label>
+              <select class="form-control" id="exampleFormControlSelect1" name="key">
+                <option>Ab</option>
+                <option>A</option>
+                <option>Bb</option>
+                <option>B</option>
+                <option>C</option>
+                <option>Db</option>
+                <option>D</option>
+                <option>Eb</option>
+                <option>E</option>
+                <option>F</option>
+                <option>Gb</option>
+                <option>G</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Select Scale</label>
+                <select class="form-control" id="exampleFormControlSelect2" name="scale">
+                  <option>Minor</option>
+                  <option>Major</option>
+                </select>
+              </div>
+            <input type="submit" value="Genarate">
+          </form>
+       </div>
+    </div>
+</body>
+</html>
